@@ -5,6 +5,7 @@ import "primereact/resources/primereact.min.css";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Home from './component/Home/Home';
 import Education from './component/Education/Education';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Route path="/Education" element={<Education/>}/>
           </Routes>
           </Router> 
-    
+        <Footer/>
     </div>
   );
 }

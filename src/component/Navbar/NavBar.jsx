@@ -6,8 +6,8 @@ import { Menubar } from 'primereact/menubar';
 
 export default function NavBar() {
     const navigate = useNavigate();
-
-    const items = [
+   // const pages = ["Home","About me", "Education", "Experience", "Projects", "Certifications", "Contact"];
+    const pages = [
         {
             label: 'Home',
             icon: 'pi pi-fw pi-user',
@@ -16,7 +16,7 @@ export default function NavBar() {
         {
             label: 'Education',
             icon: 'pi pi-fw pi-book',
-            ommand: () => {navigate('/Education') }
+            command: () => {navigate('/Education') }
 
         },
         {
@@ -77,8 +77,8 @@ export default function NavBar() {
                     color: '#DAF5FF',
                     borderRadius: "20px",
                     justifyContent: 'left'
-                }} model={items} />
-
+                }} model={pages} />
+  
             </div>
         </div>
     );

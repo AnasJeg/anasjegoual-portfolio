@@ -1,48 +1,15 @@
-
-import {
-  AiFillLinkedin,
-  AiOutlineGithub,
-  AiFillMail,
-} from "react-icons/ai";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
 import SwiperCore,{Autoplay} from 'swiper';
 import 'swiper/css';
 import me from "../../image/mee.png"
 import { Card } from 'primereact/card';
-import React from "react";
 
 
 export default function Home() {
   SwiperCore.use([Autoplay])
-  const email = 'badr.ibnbrahim@gmail.com';
-  const subject = 'Portfolio Inquiry';
-  const body = 'Hello Mr_Badr, I am interested in your work.';
-
-  const mailToLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   return (
       <div >
-          <div className="bg-black text-center text-white  ">
-              <Swiper
-                  slidesPerView={1}
-                  loop={true}
-                  autoplay={{ delay: 2000 }}
-              >
-
-                  <SwiperSlide><p className="text-sm">Your work is going to fill a large part of your life</p>
-                  </SwiperSlide>
-                  <SwiperSlide><p className="text-sm"> and the only way to be truly satisfied is :</p>
-                  </SwiperSlide>
-                  <SwiperSlide><p className="text-sm"> to do what you believe is great work,</p>
-                  </SwiperSlide>
-                  <SwiperSlide><p className="text-sm">And the only way to do great work is :</p>
-                  </SwiperSlide>
-                  <SwiperSlide><p className="text-sm"> to love what you do :) </p>
-                  </SwiperSlide>
-
-              </Swiper>
-          </div>
-
           <main className=" bg-white px-10  md:px-20  mt-5 " >
               <section className="min-h-screen">
 
@@ -55,7 +22,7 @@ export default function Home() {
                   <div className=" mx-auto bg-gradient-to-b from-blue-500-500 rounded-full w-80 h-85 relative overflow-hidden mt-10 md:h-96 md:w-86">
                       <img src={me} layout="fill"  objectFit="cover" />
                   </div>
-
+      {/*
                   <div className="text-center mx-auto p-10 py-1">
 
                       <div className="text-5xl flex justify-center gap-16 py-5 ">
@@ -73,7 +40,7 @@ export default function Home() {
                       </div>
 
                   </div>
-
+  */}
               </section>
               <Card  >
                   <p className="text-center font-medium " >
