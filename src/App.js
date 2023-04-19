@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './component/Navbar/NavBar';
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Home from './component/Home/Home';
+import Education from './component/Education/Education';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+          <NavBar/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/Education" element={<Education/>}/>
+          </Routes>
+          </Router> 
+    
     </div>
   );
 }
