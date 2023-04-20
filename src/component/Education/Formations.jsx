@@ -1,72 +1,65 @@
-import { Card } from 'primereact/card'
-import React from 'react'
-import este from "../../image/este.png"
-import emsi from "../../image/emsi.png"
+import React from 'react';
+import styled from "styled-components";
+import Card from "../Card/FormCard.jsx";
+import { Slide } from "react-awesome-reveal";
+import este from "../../image/este.png";
+import emsi from "../../image/logo-emsi.png";
+import fstg from "../../image/fst.png";
 
 export default function Formations() {
     return (
-        <div >
-            <main className=" bg-white px-10  md:px-20  mt-5 " >
-                <section className="min-h-screen">
+        <Container>
+             <Slide direction="down">
+                <h4>
+                Formations
+                </h4>
 
-                    <div className="mt-5">
-                        <h3 className="text-4xl py-1  text-center  font-burtons ">Formations :</h3>
-                        <Card>
+            </Slide>
+                <Slide style={{ marginTop: 10}}>
+                    <Card
+                        Icon={emsi}
+                        title={"Étudiant en 4 année a école marocaine des sciences de l’ingénieur"}
+                        subtitle={`EMSI`}
+                        disc={`10/2022 – present`}
+                    />
+                </Slide>
 
-                            <p className="text-center font-medium mt-5" >
-                                Thanks to self education and these two establishments, I have a strong educational background in computer science.
+                <Slide direction="right" style={{ marginTop: 10}}>
+                    <Card
+                        Icon={este}
+                        title={"Étudiant en licence professionnelle ISIL"}
+                        subtitle={`EST ESSAOUIRA `}
+                        disc={`10/2021 – 07/2022`}
+                    />
+                </Slide>
+                <Slide style={{ marginTop: 10}}>
+                    <Card
+                        Icon={este}
+                        title={"Diplôme Universitaire de Technologie (DUT) Génie Informatique"}
+                        subtitle={`EST ESSAOUIRA`}
+                        disc={`09/2019 – 06/2021`}
+                    />
+                </Slide>
+                <Slide direction="right" style={{ marginTop: 10}}>
+                    <Card
+                        Icon={fstg}
+                        title={"Tronc Commun (MIPC), FSTG"}
+                        subtitle={`FTS MARRAKECH`}
+                        disc={`10/2018 – 06/2019`}
+                    />
+                </Slide>
 
-                            </p>
-                        </Card>
-                    </div>
-                    <div className="mt-5">
-                        <Card  >
-                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-
-                                <img alt="logo" src={emsi} height="30" width="100" className="p-mr-2" />
-                            </div>
-                            <p className="text-center font-semibold mt-5" >
-                                I am closer to complete my engineering education at <span className="text-teal-500"> EMSI </span> School,
-                            </p>
-                            <p className="text-center font-semibold mt-5" >
-                                where I deepened my understanding of computer architecture,
-                            </p>
-                            <p className="text-center font-semibold mt-5" >
-                                operating systems, and databases.
-                            </p>
-                        </Card>
-                    </div>
-                    <div className="mt-5">
-                        <Card  >
-                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-
-                                <img alt="logo" src={este} height="100" width="150" className="p-mr-2" />
-                                <h4> Licence Professionnelle (LP) - Ingénieriedes Systemes Informatiques Et Logiciels</h4>
-                            </div>
-                            <p className="text-center font-semibold mt-5" >
-                                I obtained my bachelor s degree in Computer Science from the<span className="text-teal-500"> FST </span>  University,</p>
-                            <p className="text-center font-semibold mt-5" >
-                                where I gained a solid foundation in programming languages, and algorithms.
-                            </p>
-                        </Card>
-                    </div>
-                    <div className="mt-5">
-                        <Card  >
-                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-
-                                <img alt="logo" src={este} height="100" width="150" className="p-mr-2" />
-                                <h4>DIPLÔME UNIVERSITAIRE DE TECHNOLOGIE (DUT)</h4>
-                            </div>
-                            <p className="text-center font-semibold mt-5" >
-                                I obtained my bachelor s degree in Computer Science from the<span className="text-teal-500"> ESTE </span></p>
-                            <p className="text-center font-semibold mt-5" >
-                                where I gained a solid foundation in programming languages, and algorithms.
-                            </p>
-                        </Card>
-                    </div>
-                </section>
-
-            </main>
-        </div>
+        </Container>
     )
 }
+
+
+const Container = styled.div`
+  width: 80%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  @media (max-width: 840px) {
+    width: 90%;
+  }
+`;
