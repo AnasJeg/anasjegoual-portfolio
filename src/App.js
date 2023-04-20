@@ -3,9 +3,12 @@ import NavBar from './component/Navbar/NavBar';
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Home from './component/Home/Home';
-import Education from './component/Education/Education';
+import Formations from './component/Education/Formations';
 import Footer from './component/Footer/Footer';
+import Experience from './component/Experience/Experience';
+import Projets from './component/Projets/Projets';
+import Contact from './component/Contact/Contact';
+import MyProfile from './component/Home/MyProfile';
 
 function App() {
   return (
@@ -13,8 +16,11 @@ function App() {
         <Router>
           <NavBar/>
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/Education" element={<Education/>}/>
+            <Route path="/" element={<MyProfile/>}/>
+            <Route path="/Formations" element={<Formations/>}/>
+            <Route path="/Experiences" element={<Experience/>}/>
+            <Route path="/Projets" element={<Projets/>}/>
+            <Route path="/Contact" element={<Contact/>}/>
           </Routes>
           </Router> 
         <Footer/>

@@ -4,25 +4,47 @@ import { RiInstagramFill } from "react-icons/ri";
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { RiTelegramFill } from 'react-icons/ri';
 import "../Footer/footer.css"
-
+import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
+import { BsFacebook, BsSlack } from "react-icons/bs";
 
 export default function Footer() {
 
     return (
-            <footer  className="footer-dark" style={{ marginTop: "50px" }}>
-                <div style={{ display: 'grid', justifyContent: 'center' }}>
-
-                    <div className="text-center mt-5">
-
-                        <div className="col item social">
-                            <a href="#"><RiTelegramFill /></a>
-                            <a href="#"><RiFacebookCircleFill /></a>
-                            <a href="#"><AiFillTwitterCircle /></a>
-                            <a href="#"><RiInstagramFill /></a></div>
-                    </div>
-
-                    <p className="copyright">jegoualanas©2023</p>
+        <footer className="footer-dark" style={{ marginTop: "50px" }}>
+            <div className="profiles">
+                <div className="icons" style={{justifyContent: 'center'}}>
+                    <Zoom>
+                        <span>
+                            <a href="/">
+                                <AiFillGithub />
+                            </a>
+                        </span>
+                    </Zoom>
+                    <Zoom>
+                        <span>
+                            <a href="/">
+                                <AiFillLinkedin />
+                            </a>
+                        </span>
+                    </Zoom>
+                    <Zoom>
+                        <span>
+                            <a href="/">
+                                <BsFacebook />
+                            </a>
+                        </span>
+                    </Zoom>
+                    <Zoom>
+                        <span>
+                            <a href="/">
+                                <RiInstagramFill />
+                            </a>
+                        </span>
+                    </Zoom>
                 </div>
-            </footer>
+            </div>
+            <p className="copyright">jegoualanas©2023</p>
+        </footer>
     );
 }
