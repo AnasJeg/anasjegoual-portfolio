@@ -27,6 +27,11 @@ export default function NavBar() {
 
         },
         {
+            label: 'Certifications',
+            command: () => {navigate('/Certifications') }
+
+        },
+        {
             label: 'Contact',
             command: () => {navigate('/Contact') }
         }

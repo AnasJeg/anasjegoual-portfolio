@@ -6,9 +6,9 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Formations from './component/Education/Formations';
 import Footer from './component/Footer/Footer';
 import Experience from './component/Experience/Experience';
-import Projets from './component/Projets/Projets';
 import Contact from './component/Contact/Contact';
 import MyProfile from './component/Home/MyProfile';
+import Certifications from './component/Certifications/Certifications';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<MyProfile/>}/>
             <Route path="/Formations" element={<Formations/>}/>
             <Route path="/Experiences" element={<Experience/>}/>
-            <Route path="/Projets" element={<Projets/>}/>
+            <Route path="/Certifications" element={<Certifications/>}/>
             <Route path="/Contact" element={<Contact/>}/>
           </Routes>
           </Router> 
