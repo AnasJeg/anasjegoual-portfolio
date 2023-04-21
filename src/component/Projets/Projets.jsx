@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "../Card/MyCard.jsx";
 import { Slide } from "react-awesome-reveal";
-import este from "../../image/este.png";
-import Minnovation from "../../image/m-innovation.jpeg";
-import innova from "../../image/innova.jpeg";
+import CardProjet from "../Card/CardProjet.jsx";
 
 const Projets = () => {
     return (
@@ -17,32 +14,28 @@ const Projets = () => {
             </Slide>
             <Cards>
                 <Slide>
-                    <Card
-                        Icon={este}
-                        title={"Stage d’initiation, ESTE"}
-                        subtitle={`06/2020 – 07/2020 `}
-                        disc={`Réalisation d'une Application web pour l'école supérieure de technologie`}
+                    <CardProjet
+                        title={"Création d’un site web Location de voitures"}
+                        subtitle={`2022-2023`}
+                        disc={`Spring Boot - Typescript`}
                     />
                 </Slide>
                 <Slide>
-                    <Card
-                        Icon={este}
-                        title={"Projet de Fin d’études DUT, ESTE"}
-                        subtitle={`02/2021 – 04/2021`}
-                        disc={`Réalisation d’une Application Mobile pour Scan et la gestion des QR/Barre des produits`}
+                    < CardProjet
+                        title={"Création d'une application desktop de gestion d’un hotel"}
+                        subtitle={`2022`}
+                        disc={`java`}
                     />
                 </Slide>
                 <Slide>
-                    <Card
-                        Icon={Minnovation}
-                        title={"Stage de Fin d’études DUT, M-innovation"}
-                        subtitle={`04/2021 – 06/2021 `}
-                        disc={`Réalisation d’une Application Web pour Coran Karim`}
+                    < CardProjet
+                        title={"Création d'une application mobile qui permet de parcourir une liste des Pokémon"}
+                        subtitle={`2023`}
+                        disc={`Android (java)`}
                     />
                 </Slide>
                 <Slide>
-                    <Card
-                        Icon={innova}
+                    < CardProjet
                         title={"Stage de Fin d’études LP,  Innova Smart Health"}
                         subtitle={`04/2022 – 06/2022`}
                         disc={`Développement d'une web App de visualisation des reporting d'une application de santé`}
