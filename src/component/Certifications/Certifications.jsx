@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import este from "../../image/este.png";
-import emsi from "../../image/logo-emsi.png";
-import fstg1 from "../../image/fst.png";
-import fstg2 from "../../image/fst.png";
-import fstg3 from "../../image/fst.png";
-import fstg4 from "../../image/fst.png";
-import fstg5 from "../../image/fst.png";
 import { Card } from 'primereact/card';
 import "./Certif.css";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
+import bootC from "../../image/bootstrap.png";
+import reactC from "../../image/react.png";
+import nodeC from "../../image/node.png";
+import devOpsC from "../../image/devOps.png";
+import cloudC from "../../image/cloud.png";
+import agileC from "../../image/agile.png";
 
 function Certifications() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -29,24 +28,28 @@ function Certifications() {
 
     const images = [
         {
-            src: fstg1,
-            alt: "Image 1",
+            src: reactC,
+            alt: "React JS",
         },
         {
-            src: fstg2,
-            alt: "Image 2",
+            src: nodeC,
+            alt: "NodeJS -Expressand -MongoDB",
         },
         {
-            src: fstg3,
-            alt: "Image 3",
+            src: bootC,
+            alt: "Bootstrap 4",
         },
         {
-            src: fstg4,
-            alt: "Image 4",
+            src: devOpsC,
+            alt: "DevOps",
         },
         {
-            src: este,
-            alt: "Image 5",
+            src: cloudC,
+            alt: " Cloud Computing",
+        },
+        {
+            src: agileC,
+            alt: "Agile Development and Scrum",
         },
 
     ];
@@ -67,7 +70,7 @@ function Certifications() {
                         <Card className={`cd ${index === activeIndex ? "active" : ""}`}>
                             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-                                <img alt="logo" src={item.src} height="100" width="150" className="p-mr-2" />
+                                <img alt="logo" src={item.src} height="200" width="300" className="p-mr-2" />
                                 <h4>{item.alt}</h4>
                             </div>
                             <p className="text-center font-semibold mt-5" >
@@ -81,10 +84,10 @@ function Certifications() {
                     ))}
                 </div>
                 <button className="prev-btn" onClick={handlePrevClick}>
-                    ⏮️
+                &lt;
                 </button>
                 <button className="next-btn" onClick={handleNextClick}>
-                    ⏭️
+                &gt;
                 </button>
             </div>
         </>
