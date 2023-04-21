@@ -35,29 +35,35 @@ export default function Contact() {
     return (
         <Container>
             < FormBody>
-                <Slide direction="left">
                 <form id="fm" className="fm" onSubmit={sendEmail}>
+                <Slide direction="left">
                         <div className="name">
                             <span>
                                 <CgProfile />
                             </span>
                             <input type="text" name="user_name"  placeholder="Nom..." />
                         </div>
+                        </Slide>
+                        <Slide direction="right">
                         <div className="email">
                             <span>
                                 <MdAlternateEmail />
                             </span>
                             <input type="email" name="user_email" placeholder="Email..." />
                         </div>
+                        </Slide>
+                        <Slide direction="left">     
                         <div className="message">
                             <span className="messageIcon">
                                 <FiMail />
                             </span>
                             <textarea name="message" cols="30" rows="10" placeholder="Message..."></textarea>
                         </div>
+                        </Slide>
+             <Slide direction="right">      
                         <button type="submit" value="Send">Envoyer</button>                        
-                    </form>
                 </Slide>
+                    </form>
             </ FormBody>
         </Container>
     )
