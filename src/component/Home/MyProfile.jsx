@@ -13,7 +13,7 @@ const MyProfile = () => {
     <Container id="home" className="container">
       <Slide direction="left">
         <Texts>
-      <h1 className="green">  <span className="green">Hello I'am</span>    Anas JEGOUAL</h1>
+      <h1 className="green">  <span className="green">Hello I am</span>    Anas JEGOUAL</h1>
           <h3>Software Engineering Student</h3>
           <p>
             <Card  >
@@ -98,43 +98,6 @@ const Texts = styled.div`
         box-shadow: 0 0 0 0 #fff, 0 0 0 3px rgb(94, 137, 255);
     }
 
-  }
-`;
-const Social = styled.div`
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  p {
-    font-size: 0.9rem;
-    @media (max-width: 690px) {
-      font-size: 0.7rem;
-    }
-  }
-
-  .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    span {
-      width: 2.3rem;
-      height: 2rem;
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #01be96;
-      position: relative;
-      transition: transform 400ms ease-in-out;
-      :hover {
-        transform: rotate(360deg);
-      }
-    }
-
-    a {
-      color: #fff;
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
   }
 `;
 const Profile = styled.div`

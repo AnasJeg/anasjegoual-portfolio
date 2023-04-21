@@ -58,7 +58,8 @@ export default function NavBar() {
                     backgroundColor: '#F6F1E9',
                     color: '#DAF5FF',
                     borderRadius: "20px",
-                    justifyContent: "center"
+                    justifyContent: "center",
+                    alignContent: "center"
                 }} model={pages} />
   
             </div>
