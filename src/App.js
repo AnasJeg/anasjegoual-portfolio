@@ -10,6 +10,7 @@ import Contact from './component/Contact/Contact';
 import MyProfile from './component/Home/MyProfile';
 import 'semantic-ui-css/semantic.min.css'
 import MyCertif from './component/Certifications/MyCertif';
+import Projets from './component/Projets/Projets';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<MyProfile/>}/>
             <Route path="/Formations" element={<Formations/>}/>
             <Route path="/Experiences" element={<Experience/>}/>
+            <Route path="/Projets" element={<Projets/>}/>
             <Route path="/Certifications" element={<MyCertif/>}/>
             <Route path="/Contact" element={<Contact/>}/>
           </Routes>

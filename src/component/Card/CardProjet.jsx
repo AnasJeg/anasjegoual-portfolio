@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { Card } from 'primereact/card';
 
-export default function MyCard(props) {
+export default function CardProjet(props) {
     const { Icon, disc, title,subtitle } = props;
     const header = (
         <img alt="Card" src={Icon} style={{ height: 200 }}/>
