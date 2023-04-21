@@ -1,97 +1,49 @@
-import React, { useState } from "react";
-import { Card } from 'primereact/card';
-import "./Certif.css";
-import styled from "styled-components";
-import { Slide } from "react-awesome-reveal";
-import bootC from "../../image/bootstrap.png";
-import reactC from "../../image/react.png";
-import nodeC from "../../image/node.png";
-import devOpsC from "../../image/devOps.png";
-import cloudC from "../../image/cloud.png";
-import agileC from "../../image/agile.png";
+import React from 'react'
+import styled from 'styled-components';
 
-function Certifications() {
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    const handlePrevClick = () => {
-        const newIndex = activeIndex === 0 ? images.length - 1 : activeIndex - 1;
-        console.log(newIndex)
-        setActiveIndex(newIndex);
-    };
-
-    const handleNextClick = () => {
-        const newIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
-        console.log(newIndex)
-        setActiveIndex(newIndex);
-    };
-
-
-    const images = [
-        {
-            src: reactC,
-            alt: "React JS",
-        },
-        {
-            src: nodeC,
-            alt: "NodeJS -Expressand -MongoDB",
-        },
-        {
-            src: bootC,
-            alt: "Bootstrap 4",
-        },
-        {
-            src: devOpsC,
-            alt: "DevOps",
-        },
-        {
-            src: cloudC,
-            alt: " Cloud Computing",
-        },
-        {
-            src: agileC,
-            alt: "Agile Development and Scrum",
-        },
-
-    ];
-
-
-    return (
-        <>
-            <Slide direction="down">
-                <h4>
-                    Certifications
-                </h4>
-
-            </Slide>
-
-            <div className="gallery-container">
-                <div className="image-container">
-                    {images.map((item, index) => (
-                        <Card className={`cd ${index === activeIndex ? "active" : ""}`}>
-                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-
-                                <img alt="logo" src={item.src} height="200" width="300" className="p-mr-2" />
-                                <h4>{item.alt}</h4>
-                            </div>
-                            <p className="text-center font-semibold mt-5" >
-                                <span className="text-teal-500"> {item.alt} </span>
-                            </p>
-                            <p className="text-center font-semibold mt-5" >
-                                {item.alt}
-                            </p>
-                        </Card>
-
-                    ))}
-                </div>
-                <button className="prev-btn" onClick={handlePrevClick}>
-                &lt;
-                </button>
-                <button className="next-btn" onClick={handleNextClick}>
-                &gt;
-                </button>
-            </div>
-        </>
-    );
+const Certifications = (props) => {
+    const { img, disc } = props.item;
+  return (
+    <Container className='project'>
+        <img src={img} alt="project" />
+        <div className="disc">
+            <h1>{disc}</h1>
+        </div>
+    </Container>
+  )
 }
 
 export default Certifications;
+
+const Container = styled.div`
+    height: 20rem;
+    background-color: #F6F1E9;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 400ms ease-in-out;
+    }
+    .disc{
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -10rem;
+        text-align: left;
+        padding: 0.5rem;
+        transition: all 400ms ease-in-out;
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+    :hover > .disc{
+        bottom: 0;
+    }
+
+`

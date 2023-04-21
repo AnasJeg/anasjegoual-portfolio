@@ -8,7 +8,8 @@ import Footer from './component/Footer/Footer';
 import Experience from './component/Experience/Experience';
 import Contact from './component/Contact/Contact';
 import MyProfile from './component/Home/MyProfile';
-import Certifications from './component/Certifications/Certifications';
+import 'semantic-ui-css/semantic.min.css'
+import MyCertif from './component/Certifications/MyCertif';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Route path="/" element={<MyProfile/>}/>
             <Route path="/Formations" element={<Formations/>}/>
             <Route path="/Experiences" element={<Experience/>}/>
-            <Route path="/Certifications" element={<Certifications/>}/>
+            <Route path="/Certifications" element={<MyCertif/>}/>
             <Route path="/Contact" element={<Contact/>}/>
           </Routes>
           </Router> 
