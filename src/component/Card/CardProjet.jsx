@@ -2,13 +2,13 @@ import React from 'react';
 import { Card } from 'primereact/card';
 
 export default function CardProjet(props) {
-    const { disc, title,subtitle } = props;
+    const { disc, title,subtitle,lien } = props;
     return (
           <div >
           <main className=" bg-white px-10  md:px-20  mt-5 " >
               <section className="min-h-screen">
                   <div className="mt-5">
-                      <Card  >
+                      <Card  style={{height: 250}}>
                           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                               <h4>{title}</h4>
                           </div>
@@ -18,6 +18,9 @@ export default function CardProjet(props) {
                           <p className="text-center font-semibold mt-5" >
                               {disc}
                           </p>
+                          <a href={lien}>
+                                Visite
+                          </a>
                       </Card>
                   </div>
               </section>

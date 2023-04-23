@@ -14,17 +14,11 @@ const Projets = () => {
             </Slide>
             <Cards>
                 <Slide>
-                    <CardProjet
-                        title={"Création d’un site web Location de voitures"}
-                        subtitle={`2022-2023`}
-                        disc={`Spring Boot - Typescript`}
-                    />
-                </Slide>
-                <Slide>
                     < CardProjet
                         title={"Création d'une application desktop de gestion d’un hotel"}
                         subtitle={`2022`}
                         disc={`java`}
+                        lien={'https://github.com/AnasJeg/Gestion-Reservation-java'}
                     />
                 </Slide>
                 <Slide>
@@ -32,13 +26,23 @@ const Projets = () => {
                         title={"Création d'une application mobile qui permet de parcourir une liste des Pokémon"}
                         subtitle={`2023`}
                         disc={`Android (java)`}
+                        lien={'https://github.com/AnasJeg/Pokemon-AnasJ'}
                     />
                 </Slide>
                 <Slide>
                     < CardProjet
-                        title={"Stage de Fin d’études LP,  Innova Smart Health"}
-                        subtitle={`04/2022 – 06/2022`}
-                        disc={`Développement d'une web App de visualisation des reporting d'une application de santé`}
+                        title={"Création d'une application desktop smartHome"}
+                        subtitle={`2022`}
+                        disc={`c#`}
+                        lien={'https://github.com/AnasJeg/SmartHome'}
+                    />
+                </Slide>
+                <Slide>
+                    <CardProjet
+                        title={"Création d’un site web Location de voitures"}
+                        subtitle={`2022-2023`}
+                        disc={`Spring Boot - Typescript`}
+                        lien={'#'}
                     />
                 </Slide>
             </Cards>
