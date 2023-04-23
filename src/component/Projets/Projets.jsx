@@ -16,7 +16,7 @@ const Projets = () => {
                 <Slide>
                     < CardProjet
                         title={"Création d'une application desktop de gestion d’un hotel"}
-                        subtitle={`2022`}
+                        annee={`2022`}
                         disc={`java`}
                         lien={'https://github.com/AnasJeg/Gestion-Reservation-java'}
                     />
@@ -24,7 +24,7 @@ const Projets = () => {
                 <Slide>
                     < CardProjet
                         title={"Création d'une application mobile qui permet de parcourir une liste des Pokémon"}
-                        subtitle={`2023`}
+                        annee={`2023`}
                         disc={`Android (java)`}
                         lien={'https://github.com/AnasJeg/Pokemon-AnasJ'}
                     />
@@ -32,7 +32,7 @@ const Projets = () => {
                 <Slide>
                     < CardProjet
                         title={"Création d'une application desktop smartHome"}
-                        subtitle={`2022`}
+                        annee={`2022`}
                         disc={`c#`}
                         lien={'https://github.com/AnasJeg/SmartHome'}
                     />
@@ -40,7 +40,7 @@ const Projets = () => {
                 <Slide>
                     <CardProjet
                         title={"Création d’un site web Location de voitures"}
-                        subtitle={`2022-2023`}
+                        annee={`2022-2023`}
                         disc={`Spring Boot - Typescript`}
                         lien={'#'}
                     />
