@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import me from "../../image/mee.png"
+import me from "../../image/myimage-removebg.png"
 import { Card } from "primereact/card";
 import AnasJegoual from "./AnasJEGOUAL.pdf";
 
