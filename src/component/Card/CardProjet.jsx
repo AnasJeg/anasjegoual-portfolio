@@ -1,30 +1,34 @@
-import React from 'react'; 
+import React from 'react';
 import { Card } from 'primereact/card';
+import { Link } from 'react-router-dom';
+import { Button } from 'primereact/button';
 
 export default function CardProjet(props) {
-    const { disc, title,annee,lien } = props;
-    return (
-          <div >
-          <main className=" bg-white px-10  md:px-20  mt-5 " >
-              <section className="min-h-screen">
-                  <div className="mt-5">
-                      <Card  style={{height: 250}}>
-                          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                              <h4>{title}</h4>
-                          </div>
-                          <p className="text-center font-semibold mt-5" >
-                          <span className="text-teal-500"> {annee} </span>
-                              </p>
-                          <p className="text-center font-semibold mt-5" >
-                              {disc}
-                          </p>
-                          <a href={lien}>
-                                Visite
-                          </a>
-                      </Card>
-                  </div>
-              </section>
-          </main>
+  const { disc, title, annee, lien } = props;
+
+  const footer = (
+    <div className="flex flex-wrap justify-content-end gap-2">
+      <Link
+        style={{ textDecoration: "none", color: "black", fontFamily: "better" }}
+        to={lien}
+      >
+        <Button icon="pi pi-search" rounded text raised severity="success" aria-label="Search" />
+      </Link>
+    </div>
+  );
+
+  return (
+    <div className="flex flex-wrap mx-4">
+      <div className="w-full md:w-1/3 px-4 mt-5">
+        <Card
+          className="md:w-55rem h-full"
+          title={<div className="card-title">{title}</div>}
+          subTitle={annee}
+          footer={footer}
+        >
+          <p className="m-0">{disc}</p>
+        </Card>
       </div>
-    )
+    </div>
+  );
 }

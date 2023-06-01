@@ -7,47 +7,48 @@ import emsi from "../../image/logo-emsi.png";
 import fstg from "../../image/fst.png";
 
 export default function Formations() {
+    //style={{ marginTop: 10}}
     return (
         <Container>
-             <Slide direction="down">
+            <Slide direction="down">
                 <h4>
-                Formations
+                    Formations
                 </h4>
 
             </Slide>
-                <Slide style={{ marginTop: 10}}>
-                    <Card
-                        Icon={emsi}
-                        title={"Étudiant en 4 année a école marocaine des sciences de l’ingénieur"}
-                        subtitle={`EMSI`}
-                        disc={`10/2022 – present`}
-                    />
-                </Slide>
+            <Slide>
+                <Card
+                    Icon={emsi}
+                    title={"Étudiant en 4 année a école marocaine des sciences de l’ingénieur"}
+                    subtitle={`EMSI`}
+                    disc={`10/2022 – present`}
+                />
+            </Slide>
 
-                <Slide direction="right" style={{ marginTop: 10}}>
-                    <Card
-                        Icon={este}
-                        title={"Étudiant en licence professionnelle ISIL"}
-                        subtitle={`EST ESSAOUIRA `}
-                        disc={`10/2021 – 07/2022`}
-                    />
-                </Slide>
-                <Slide style={{ marginTop: 10}}>
-                    <Card
-                        Icon={este}
-                        title={"Diplôme Universitaire de Technologie (DUT) Génie Informatique"}
-                        subtitle={`EST ESSAOUIRA`}
-                        disc={`09/2019 – 06/2021`}
-                    />
-                </Slide>
-                <Slide direction="right" style={{ marginTop: 10}}>
-                    <Card
-                        Icon={fstg}
-                        title={"Tronc Commun (MIPC), FSTG"}
-                        subtitle={`FTS MARRAKECH`}
-                        disc={`10/2018 – 06/2019`}
-                    />
-                </Slide>
+            <Slide direction="right" >
+                <Card
+                    Icon={este}
+                    title={"Étudiant en licence professionnelle ISIL"}
+                    subtitle={`EST ESSAOUIRA `}
+                    disc={`10/2021 – 07/2022`}
+                />
+            </Slide>
+            <Slide >
+                <Card
+                    Icon={este}
+                    title={"Diplôme Universitaire de Technologie (DUT) Génie Informatique"}
+                    subtitle={`EST ESSAOUIRA`}
+                    disc={`09/2019 – 06/2021`}
+                />
+            </Slide>
+            <Slide direction="right" >
+                <Card
+                    Icon={fstg}
+                    title={"Tronc Commun (MIPC), FSTG"}
+                    subtitle={`FTS MARRAKECH`}
+                    disc={`10/2018 – 06/2019`}
+                />
+            </Slide>
 
         </Container>
     )

@@ -39,6 +39,14 @@ const Projets = () => {
                 </Slide>
                 <Slide>
                     <CardProjet
+                        title={"Création d’un site web Localisation des pharmacies"}
+                        annee={`2022-2023`}
+                        disc={`Spring Boot - ReactJS`}
+                        lien={'https://localpharmacie.vercel.app/'}
+                    />
+                </Slide>
+                <Slide>
+                    <CardProjet
                         title={"Création d’un site web Location de voitures"}
                         annee={`2022-2023`}
                         disc={`Spring Boot - Typescript`}
@@ -67,7 +75,17 @@ const Container = styled.div`
 `;
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 `;
+
+

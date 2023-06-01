@@ -1,7 +1,9 @@
 import './App.css';
 import NavBar from './component/Navbar/NavBar';
-import "primereact/resources/themes/lara-light-indigo/theme.css";
-import "primereact/resources/primereact.min.css";
+import 'primereact/resources/themes/lara-light-indigo/theme.css';   // theme
+import 'primereact/resources/primereact.css';                       // core css
+import 'primeicons/primeicons.css';                                 // icons
+import 'primeflex/primeflex.css';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Formations from './component/Education/Formations';
 import Footer from './component/Footer/Footer';

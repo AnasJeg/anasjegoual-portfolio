@@ -81,7 +81,7 @@ const Texts = styled.div`
   button {
     display: inline-block;
     outline: none;
-    cursor: copy;
+    cursor: pointer;
     font-weight: 600;
     border-radius: 3px;
     padding: 12px 24px;
