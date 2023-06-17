@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
 import me from "../../image/myimage-removebg.png"
 import { Card } from "primereact/card";
-import AnasJegoual from "./AnasJEGOUAL.pdf";
+import AnasJegoual from "./Anas_Jegoual_Resume.pdf";
 
 const MyProfile = () => {
   return (
