@@ -1,8 +1,7 @@
 import React from "react";
-import { AiFillTwitterCircle } from 'react-icons/ai';
 import "../Footer/footer.css"
 import { Zoom } from "react-awesome-reveal";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineSolution } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 
 export default function Footer() {
@@ -39,6 +38,14 @@ export default function Footer() {
                             </a>
                         </span>
                     </Zoom>
+                    <Zoom>
+                        <span>
+                            <a href="Anas_Jegoual_Resume.pdf" download>
+                                <AiOutlineSolution />
+                            </a>
+                        </span>
+                    </Zoom>
+            
                 </div>
             </div>
             <p className="copyright">jegoualanas©2023</p>

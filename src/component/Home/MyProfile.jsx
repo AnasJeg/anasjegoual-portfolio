@@ -3,28 +3,24 @@ import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
 import me from "../../image/myimage-removebg.png"
 import { Card } from "primereact/card";
-import AnasJegoual from "./Anas_Jegoual_Resume.pdf";
 
 const MyProfile = () => {
   return (
     <Container id="home" className="container">
       <Slide direction="left">
         <Texts>
-      <h1 className="green">  <span className="green">Hello I am</span>    Anas JEGOUAL</h1>
+          <h1 className="green">
+            <span className="green">Hello, I am</span> Anas JEGOUAL
+          </h1>
           <h3>Software Engineering Student</h3>
           <p>
-            <Card  >
-              <p className="text-center font-medium " >
-                Full stack developer building websites and web applications.
-                I specialize in java my role is to write and style the front-end components that meet the requirements of our mocks,
-                Technologies used React, Angular..., Also managing back end using Java , Spring boot ...
+            <Card>
+              <p className="text-center font-medium">
+                Full stack developer building websites and web applications. I specialize in Java. My role is to write and style the front-end components that meet the requirements of our mocks. Technologies used: React, Angular, etc. Also managing the back end using Java, Spring Boot, etc.
               </p>
             </Card>
           </p>
-          <a href={AnasJegoual} download>
-          <button>Download CV</button>
-          </a>
-
+        
         </Texts>
       </Slide>
       <Slide direction="right">

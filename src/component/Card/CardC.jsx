@@ -9,6 +9,7 @@ import devOpsC from "../../image/devOps.png";
 import cloudC from "../../image/cloud.png";
 import agileC from "../../image/agile.png";
 import Certifications from '../Certifications/Certifications';
+import Android from '../../image/Android-java.png'
 
 let data = [
     {
@@ -34,6 +35,10 @@ let data = [
     {
         img: agileC,
         disc: "Agile Development and Scrum",
+    },
+    {
+        img: Android,
+        disc : "Spécialisation Android App Development",
     },
 ];
 
