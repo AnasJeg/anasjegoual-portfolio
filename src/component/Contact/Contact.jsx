@@ -160,15 +160,15 @@ const FormBody = styled.div`
       }
     }
     button {
-        margin-top: 2rem;
+        margin-top: 3rem;
         display: inline-block;
         outline: none;
         font-weight: 600;
         border-radius: 3px;
         padding: 12px 24px;
         border: 0;
-        color: #3a4149;
-        background: #e7ebee;
+        color: #F6F1E9;
+        background: #000000;
         line-height: 1.15;
         font-size: 16px;
         cursor: pointer;
