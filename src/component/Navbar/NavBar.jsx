@@ -42,7 +42,7 @@ export default function NavBar() {
         },
         {
             label: 'Mobile',
-            icon: 'pi pi-fw pi-envelope',
+            icon: 'pi pi-fw pi-mobile',
             command: () => { navigate('/Mobile') }
         }
     ];
