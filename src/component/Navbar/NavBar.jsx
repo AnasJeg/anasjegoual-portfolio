@@ -39,6 +39,11 @@ export default function NavBar() {
             label: 'Contact',
             icon: 'pi pi-fw pi-envelope',
             command: () => { navigate('/Contact') }
+        },
+        {
+            label: 'Mobile',
+            icon: 'pi pi-fw pi-envelope',
+            command: () => { navigate('/Mobile') }
         }
     ];
 

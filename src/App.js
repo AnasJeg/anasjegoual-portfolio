@@ -13,8 +13,10 @@ import MyProfile from './component/Home/MyProfile';
 import 'semantic-ui-css/semantic.min.css'
 import MyCertif from './component/Certifications/MyCertif';
 import Projets from './component/Projets/Projets';
+import Mobile from './component/clinops/mobile';
 
 function App() {
+ const apkUrl= 'https://drive.google.com/file/d/1qBULEtoslut0KDyoqKYYHcB987KIdyfd/view?usp=drive_link'
   return (
     <div className="App">
         <Router>
@@ -26,6 +28,7 @@ function App() {
             <Route path="/Projets" element={<Projets/>}/>
             <Route path="/Certifications" element={<MyCertif/>}/>
             <Route path="/Contact" element={<Contact/>}/>
+            <Route path="/Mobile" element={<Mobile apkUrl={apkUrl}/>}/>
           </Routes>
           </Router> 
         <Footer/>
