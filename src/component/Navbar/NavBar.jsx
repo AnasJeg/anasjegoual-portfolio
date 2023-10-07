@@ -40,11 +40,11 @@ export default function NavBar() {
             icon: 'pi pi-fw pi-envelope',
             command: () => { navigate('/Contact') }
         },
-        {
-            label: 'Mobile',
-            icon: 'pi pi-fw pi-mobile',
-            command: () => { navigate('/Mobile') }
-        }
+        // {
+        //     label: 'Mobile',
+        //     icon: 'pi pi-fw pi-mobile',
+        //     command: () => { navigate('/Mobile') }
+        // }
     ];
 
 

@@ -19,8 +19,8 @@ export default function Formations() {
             <Slide>
                 <Card
                     Icon={emsi}
-                    title={"Étudiant en 4 année a école marocaine des sciences de l’ingénieur"}
-                    subtitle={`EMSI`}
+                    title={"Ingénieur en Informatique et Réseaux (5ème année en cours)"}
+                    subtitle={`École Marocaine des Sciences de l'Ingénieur`}
                     disc={`10/2022 – present`}
                 />
             </Slide>
@@ -28,8 +28,8 @@ export default function Formations() {
             <Slide direction="right" >
                 <Card
                     Icon={este}
-                    title={"Étudiant en licence professionnelle ISIL"}
-                    subtitle={`EST ESSAOUIRA `}
+                    title={"Licence Professionnelle (ISIL)"}
+                    subtitle={`École Supérieure de Technologie Essaouira`}
                     disc={`10/2021 – 07/2022`}
                 />
             </Slide>
@@ -37,15 +37,15 @@ export default function Formations() {
                 <Card
                     Icon={este}
                     title={"Diplôme Universitaire de Technologie (DUT) Génie Informatique"}
-                    subtitle={`EST ESSAOUIRA`}
+                    subtitle={`École Supérieure de Technologie Essaouira`}
                     disc={`09/2019 – 06/2021`}
                 />
             </Slide>
             <Slide direction="right" >
                 <Card
                     Icon={fstg}
-                    title={"Tronc Commun (MIPC), FSTG"}
-                    subtitle={`FTS MARRAKECH`}
+                    title={"Tronc Commun (MIPC)"}
+                    subtitle={`Faculté des Sciences et Techniques Marrakech`}
                     disc={`10/2018 – 06/2019`}
                 />
             </Slide>
